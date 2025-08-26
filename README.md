@@ -10,3 +10,7 @@ Este es mi portafolio web como **desarrolladora Frontend**, donde presento mis p
 
 ## 📝 Diseño y planificación  
 Antes del desarrollo, realicé el **mockup en draw.io** 🖌️ para definir la estructura, distribución y experiencia visual del portafolio, asegurando un diseño claro y enfocado en la usabilidad.  
+
+ ** ✨ GitHub Pages**  
+   - La página personal está desplegada en GitHub Pages y accesible públicamente.  
+   - [https://vivianae10.github.io/viviana-ospina/]
