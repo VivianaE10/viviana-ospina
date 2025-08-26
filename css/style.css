@@ -1,0 +1,19 @@
+#header {
+  background-color: grey;
+  padding: 30px;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.botones a {
+  text-decoration: none;
+  color: white;
+}
+
+.botones a:hover {
+  color: blue;
+}
