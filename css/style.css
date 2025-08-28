@@ -2,20 +2,31 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: rgb(0, 0, 133);
+  background-color: #1f2933;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(6, 6, 149, 0.376);
 }
 
 .btn {
   margin-block-start: 1em;
   margin-block-end: 1em;
-  padding-inline-start: 40px;
+  padding-inline-start: 60px;
 }
 
 .btn a {
   text-decoration: none;
+  font-size: 1.1rem;
   color: white;
   transition: 0.4s;
   margin-right: 30px;
+  font-weight: bold;
 }
 
 .btn a:hover {
@@ -26,19 +37,25 @@ body {
 }
 .container {
   position: relative;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 10px 30px -5px rgba(15, 53, 114, 0.8);
 }
 .banner {
-  width: 100%; /* ancho completo */
-  height: 500px; /* altura fija o relativa */
-  overflow: hidden; /* oculta partes que sobresalgan */
   position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.6;
+  box-shadow: rgb(15, 53, 114) 0px 0px 40px -10px;
 }
 .banner img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* cubre todo el contenedor sin deformarse */
   object-position: 40% 40% 40% 40%;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .title {
   position: relative;
@@ -51,8 +68,7 @@ body {
   font-size: 8rem;
   font-weight: 400;
   display: inline-block;
-  padding: 60px;
-  /* margin: 0px 0px 12px; */
+  padding: 150px;
   font-family: Comfortaa, cursive !important;
 }
 #letter-d {
@@ -61,10 +77,35 @@ body {
     rgb(45, 221, 244) 0px 0px 30px, rgb(45, 221, 244) 0px 0px 40px,
     rgb(45, 221, 244) 0px 0px 60px;
 }
+.container-p {
+  width: 100%;
+  min-height: 250px; /* ajusta según lo que quieras */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: rgb(15, 53, 114) 0px 0px 40px -10px;
+}
+
+.paragraph {
+  margin: 150px 0px;
+  font-size: 3rem;
+  align-self: center;
+  border-bottom: 3px solid rgb(45, 221, 244);
+  border-top: 3px solid rgb(45, 221, 244);
+  padding: 25px 20px;
+  color: rgb(15, 53, 114);
+  font-family: Comfortaa, cursive !important;
+}
 .info {
   background-color: white;
+  margin-top: 1px;
+  padding: 40px 40px;
 }
+
 .mi-foto img {
+  margin-top: 1px;
   width: 300px; /* Ajusta el tamaño horizontal */
   height: 300px; /* Ajusta el tamaño vertical */
   border-radius: 50%; /* Borde redondeado completo (círculo) */
