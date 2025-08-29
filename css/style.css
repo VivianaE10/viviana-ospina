@@ -2,7 +2,6 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: #1f2933;
 }
 .header {
   width: 100%;
@@ -39,7 +38,7 @@ body {
   position: relative;
   height: 100vh;
   background: rgb(0, 0, 0);
-  box-shadow: 0px 10px 30px -5px rgba(15, 53, 114, 0.8);
+  box-shadow: 0px 10px 10px -5px rgba(15, 53, 114, 0.8);
 }
 .banner {
   position: absolute;
@@ -77,10 +76,9 @@ body {
     rgb(45, 221, 244) 0px 0px 30px, rgb(45, 221, 244) 0px 0px 40px,
     rgb(45, 221, 244) 0px 0px 60px;
 }
-.sss {
-  width: 100%;
-  min-height: 250px; /* ajusta según lo que quieras */
-  background: white;
+.container-p {
+  /* min-height: 150px; */
+  /* background: white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,17 +97,45 @@ body {
   font-family: Comfortaa, cursive !important;
 }
 .info {
-  background-color: white;
-  margin-top: 1px;
-  padding: 40px 40px;
+  width: 100%;
+  margin-top: 120px;
+  color: white;
+  background: rgb(3, 6, 64);
+  display: grid;
+
+  padding: 50px 0%;
+  grid-template-columns: 40% auto;
+}
+.content-image {
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
 }
 
-.mi-foto img {
-  margin-top: 1px;
-  width: 300px; /* Ajusta el tamaño horizontal */
-  height: 300px; /* Ajusta el tamaño vertical */
-  border-radius: 50%; /* Borde redondeado completo (círculo) */
-  object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra opcional para estilo */
-  display: block; /*Opcional, evita problemas de alineación */
+.image img {
+  position: relative;
+  overflow: hidden;
+  inset: 0px;
+  z-index: 0;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  min-width: 300px;
+  min-height: 300px;
+}
+.content-description {
+  width: 80%;
+  margin: 0px auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.description strong {
+  font-weight: bolder;
+}
+
+p a {
+  text-decoration: none;
+  color: rgb(45, 221, 244);
 }
