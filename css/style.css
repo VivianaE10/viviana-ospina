@@ -2,6 +2,9 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
+  line-height: 1.5;
+  font-size: 21px;
+  /* font-family: Ubuntu, sans-serif; */
 }
 .header {
   width: 100%;
@@ -12,6 +15,34 @@ body {
   right: 0px;
   background: rgba(6, 6, 149, 0.376);
 }
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  width: 100%;
+  /* position:absolute; */
+  z-index: 3;
+  background: rgba(6, 6, 149, 0.376);
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1rem 0px;
+  margin: 0px;
+  width: 100%;
+  font-weight: bold;
+  /* justify-content: space-evenly; */
+  font-family: Ubuntu, sans-serif;
+}
+.navbar-list li a {
+  padding-inline-start: 80px;
+  unicode-bidi: isolate;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+/*  */
 
 .btn {
   margin-block-start: 1em;
@@ -28,11 +59,32 @@ body {
   font-weight: bold;
 }
 
-.btn a:hover {
-  text-decoration: underline; /* activar subrayado */
-  text-decoration-color: white; /* color de la raya */
-  text-decoration-thickness: 2px; /* grosor de la raya */
-  text-underline-offset: 3px; /* distancia del texto */
+.btn a,
+.navbar a {
+  position: relative; /* necesario para el ::after */ /* quitamos subrayado normal */
+  color: white;
+  /* display: inline-block; */
+  font-weight: 500;
+}
+
+.btn a::after,
+.navbar a::after {
+  content: ""; /* es obligatorio para que ::after aparezca.*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* grosor de la raya */
+  background-color: white;
+  transform: scaleX(0); /* comienza en 0% */
+  transform-origin: left; /* se expande desde la izquierda */
+  transition: transform 0.3s ease; /* animación */
+}
+.btn a:hover::after {
+  transform: scaleX(1); /* se llena hasta 100% */
+}
+.navbar a:hover::after {
+  transform: scaleX(1); /* se llena hasta 100% */
 }
 .container {
   position: relative;
