@@ -20,29 +20,32 @@ body {
   flex-wrap: wrap;
   /* align-items: center; */
   width: 100%;
-  /* position:absolute; */
+  position: absolute;
   z-index: 3;
+  top: 0px;
+  right: 0px;
   background: rgba(6, 6, 149, 0.376);
 }
 .navbar-list {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 1rem 0px;
+  padding: 1.1rem 0px;
   margin: 0px;
   width: 100%;
   font-weight: bold;
-  /* justify-content: space-evenly; */
   font-family: Ubuntu, sans-serif;
+  gap: 30px;
+  padding-inline-start: 60px;
+  /* justify-content: space-evenly; */
 }
 .navbar-list li a {
-  padding-inline-start: 80px;
-  unicode-bidi: isolate;
-  text-decoration: none;
   color: white;
   transition: 0.4s;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 }
-/*  */
 
 .btn {
   margin-block-start: 1em;
@@ -51,7 +54,6 @@ body {
 }
 
 .btn a {
-  text-decoration: none;
   font-size: 1.2rem;
   color: white;
   transition: 0.4s;
@@ -61,9 +63,9 @@ body {
 
 .btn a,
 .navbar a {
+  text-decoration: none;
   position: relative; /* necesario para el ::after */ /* quitamos subrayado normal */
   color: white;
-  /* display: inline-block; */
   font-weight: 500;
 }
 
@@ -72,7 +74,7 @@ body {
   content: ""; /* es obligatorio para que ::after aparezca.*/
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   width: 100%;
   height: 2px; /* grosor de la raya */
   background-color: white;
@@ -80,12 +82,11 @@ body {
   transform-origin: left; /* se expande desde la izquierda */
   transition: transform 0.3s ease; /* animación */
 }
-.btn a:hover::after {
-  transform: scaleX(1); /* se llena hasta 100% */
-}
+.btn a:hover::after,
 .navbar a:hover::after {
   transform: scaleX(1); /* se llena hasta 100% */
 }
+
 .container {
   position: relative;
   height: 100vh;
@@ -108,6 +109,38 @@ body {
   object-fit: cover; /* cubre todo el contenedor sin deformarse */
   object-position: 40% 40% 40% 40%;
   opacity: 0.9;
+}
+.header2 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  inset: 0px;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+  height: 600px; /* muestra la iamgen */
+}
+.header-imag {
+  position: absolute;
+  overflow: hidden;
+  inset: 0px;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.25;
+}
+.image2 img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  /* opacity: 0; */
 }
 .title {
   position: relative;
