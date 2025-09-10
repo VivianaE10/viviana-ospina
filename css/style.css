@@ -313,3 +313,57 @@ p a {
   width: 32px;
   fill: white;
 }
+.content-section {
+  font-family: Ubuntu, sans-serif;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0px auto;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  position: relative;
+  border-radius: 10px;
+  top: -80px;
+  padding: 0px 10% 150px;
+}
+.infomation {
+  max-width: 800px;
+  margin: 10rem auto 2rem;
+}
+h2 {
+  font-weight: bold;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 48px;
+  color: rgb(31, 41, 51);
+}
+.infomation-p {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-flow: wrap;
+  width: 100%;
+  padding: 0px;
+  margin: 0px auto 100px;
+}
+.categories-list li {
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(135deg, #f472b6, #c084fc, #8b5cf6);
+  list-style-type: none;
+  transition: 0.45s;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.categories-list li:hover {
+  transform: translateY(-6px) scale(1.07); /* sube y crece */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra flotante */
+}
