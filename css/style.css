@@ -368,33 +368,33 @@ h2 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra flotante */
 }
 .cards-container {
-  display: flex;
-  /* margin-bottom: 54px; */
+  /* display: flex; */
 }
-
+.e {
+  margin-bottom: 54px;
+}
 .card {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; /*coloca los hijos en columna (imagen arriba, texto abajo) */
   background-color: rgb(0, 23, 73);
   padding-bottom: 2rem;
-  transition: 0.4s;
+  transition: 0.4s; /* suaviza cambios (ej: hover) */
   border-radius: 8px;
 }
 .card-info {
   position: relative;
-  overflow: hidden;
-  inset: 0px;
-  z-index: 0;
+  overflow: hidden; /* oculta lo que se salga del contenedor */
+  z-index: 0; /* capa base */
 }
 
 .card-container-image {
-  position: relative;
+  position: relative; /* sirve para que su hijo absoluto (la img) se ubique dentro */
   overflow: hidden;
 }
 .card-image {
   width: 100%;
-  padding-bottom: 52.4%;
+  padding-bottom: 52.4%; /* da altura proporcional al ancho, sin que la imagen se deforme*/
 }
 .card-image img {
   position: absolute;
@@ -402,7 +402,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* ajusta la imagen sin deformar, pero puede recortar */
   object-position: center center;
   opacity: 1;
   transition: opacity 500ms;
@@ -423,10 +423,10 @@ h2 {
 }
 .card-tags {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: wrap; /* permite que las tags pasen a la siguiente línea */
 }
 .tags {
-  display: inline-flex;
+  display: inline-flex; /* inline pero con propiedades de flex */
   width: auto;
   font-weight: bolder;
   background-color: rgb(0, 115, 215);
@@ -439,6 +439,6 @@ h2 {
 }
 .card-tags p {
   margin: 1em 0px 0px;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* tamaño intermedio */
   color: rgb(241, 242, 244);
 }
