@@ -368,10 +368,12 @@ h2 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra flotante */
 }
 .cards-container {
-  /* display: flex; */
+  display: flex;
 }
-.e {
-  margin-bottom: 54px;
+.cards-container2 {
+  margin-left: 54px;
+  flex: 1 1 0%;
+  min-width: 250px;
 }
 .card {
   display: flex;
@@ -381,7 +383,9 @@ h2 {
   padding-bottom: 2rem;
   transition: 0.4s; /* suaviza cambios (ej: hover) */
   border-radius: 8px;
+  margin-bottom: 54px;
 }
+
 .card-info {
   position: relative;
   overflow: hidden; /* oculta lo que se salga del contenedor */
