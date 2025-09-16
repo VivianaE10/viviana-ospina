@@ -446,3 +446,16 @@ h2 {
   font-size: 1.2rem; /* tamaño intermedio */
   color: rgb(241, 242, 244);
 }
+.btn-container {
+  display: flex;
+  width: 30%;
+  padding: 20px 0px;
+  margin: 60px auto 0px;
+  background: rgb(6, 6, 149);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  justify-content: center;
+  border: none;
+}
