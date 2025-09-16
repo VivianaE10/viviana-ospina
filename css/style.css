@@ -366,6 +366,7 @@ h2 {
 .categories-list li:hover {
   transform: translateY(-6px) scale(1.07); /* sube y crece */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra flotante */
+  cursor: pointer;
 }
 .cards-container {
   display: flex;
@@ -384,6 +385,11 @@ h2 {
   transition: 0.4s; /* suaviza cambios (ej: hover) */
   border-radius: 8px;
   margin-bottom: 54px;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.07); /* sube y crece */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra flotante */
+  cursor: pointer;
 }
 
 .card-info {
