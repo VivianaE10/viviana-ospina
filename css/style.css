@@ -253,7 +253,6 @@ p a {
   display: grid;
   position: relative;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -452,7 +451,7 @@ h2 {
   font-size: 1.2rem; /* tamaño intermedio */
   color: rgb(241, 242, 244);
 }
-.btn-container {
+#btn-container {
   display: flex;
   width: 30%;
   padding: 20px 0px;
@@ -464,4 +463,13 @@ h2 {
   border-radius: 30px;
   justify-content: center;
   border: none;
+  cursor: pointer;
+}
+.footer-no-margin {
+  margin-top: 150px;
+}
+.icon {
+  margin-left: 20px;
+  display: inline-block;
+  width: 28px;
 }
