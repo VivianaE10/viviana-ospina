@@ -34,9 +34,9 @@ body {
   margin: 0px;
   width: 100%;
   font-weight: bold;
-  font-family: Ubuntu, sans-serif;
   gap: 30px;
   padding-inline-start: 65px;
+
   /* justify-content: space-evenly; */
 }
 .navbar-list li a {
@@ -45,6 +45,7 @@ body {
   position: relative;
   margin: 0px;
   padding: 0px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .btn {
@@ -535,10 +536,34 @@ h2 {
   line-height: 1.28;
   font-family: "Poppins", sans-serif;
 }
-.contactame-title {
+.contact-title {
   text-align: center;
   max-width: 700px;
   margin: 50px auto;
+  line-height: 1.3;
+  font-family: "Fira Sans", sans-serif;
+}
+.contact-social-media {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  max-width: 300px;
+}
+.contact-social-media a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #010986;
+}
+.svg-container-social {
+  width: 45px;
+}
+h3 {
+  font-size: 21px;
+  margin: 0px 0px 0px 20px;
+  font-weight: 500;
   line-height: 1.3;
   font-family: "Fira Sans", sans-serif;
 }
