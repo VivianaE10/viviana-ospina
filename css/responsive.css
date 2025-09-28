@@ -20,7 +20,7 @@
   .header-title h1,
   .name {
     font-size: 4rem; /* más pequeño en móvil */
-    padding: 350px 8px;
+    padding: 250px 8px;
   }
 
   .paragraph {
@@ -88,8 +88,6 @@
     height: auto; /* evita que footer mantenga 200px fijo */
     margin-top: 10;
   }
-
-  /* orden visual: 1 = aparece primero, 2 = después, etc. */
 
   .icons-container {
     order: 2; /* los ponemos antes del bloque .message */
