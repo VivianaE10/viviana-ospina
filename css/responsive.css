@@ -11,6 +11,7 @@
   .btn {
     margin: 20px 0;
     text-align: center;
+    padding-inline-start: 5px;
   }
 
   /* Hero */
@@ -20,7 +21,7 @@
   .header-title h1,
   .name {
     font-size: 4rem; /* más pequeño en móvil */
-    padding: 250px 8px;
+    padding: 230px 8px;
   }
 
   .paragraph {
