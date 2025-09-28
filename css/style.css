@@ -107,58 +107,52 @@ body {
   opacity: 0.6;
   box-shadow: rgb(15, 53, 114) 0px 0px 40px -10px;
 }
-@media (max-width: 768px) {
-  .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* cubre todo el contenedor sin deformarse */
-    object-position: 40% 40% 40% 40%;
-    opacity: 0.9;
-  }
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre todo el contenedor sin deformarse */
+  object-position: 40% 40% 40% 40%;
+  opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .header2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    inset: 0px;
-    z-index: 0;
-    background-color: rgb(0, 0, 0);
-    height: 600px; /* muestra la iamgen */
-  }
+.header2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  inset: 0px;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+  height: 600px; /* muestra la iamgen */
 }
-@media (max-width: 768px) {
-  .header-title {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    display: grid; /*alinear en dos columnas*/
-    font-family: "Poppins", sans-serif;
-  }
+
+.header-title {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  display: grid; /*alinear en dos columnas*/
+  font-family: "Poppins", sans-serif;
 }
-@media (max-width: 768px) {
-  .header-title {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    display: grid; /*alinear en dos columnas*/
-    font-family: "Poppins", sans-serif;
-  }
+
+.header-title {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  display: grid; /*alinear en dos columnas*/
+  font-family: "Poppins", sans-serif;
 }
-@media (max-width: 768px) {
-  .header-title2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 60%;
-    margin: 0px auto;
-  }
+
+.header-title2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  margin: 0px auto;
 }
+
 .header-title h1 {
   color: white;
   font-size: 6.5rem;
@@ -338,6 +332,7 @@ p a {
   width: 32px;
   fill: white;
 }
+/* /////// interfaz acerca de ///////////////////// */
 .content-section {
   font-family: Ubuntu, sans-serif;
   gap: 30px;
@@ -499,7 +494,7 @@ h2 {
   display: inline-block;
   width: 28px;
 }
-/* /////// interfaz contacto*/
+/* /////// interfaz contacto//////////*/
 
 .header3 {
   display: flex;

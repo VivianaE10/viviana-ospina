@@ -1,0 +1,53 @@
+@media (max-width: 480px) {
+  /* Navbar horizontal */
+  .navbar-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem; /* más pequeño */
+    padding-inline-start: 0;
+  }
+
+  /* Texto encima del banner */
+  .header-title,
+  .title,
+  .header3 .title2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .navbar-list li {
+    padding: 6px 0;
+  }
+
+  /* Ajustar solo el texto "Es un placer conocerte" */
+  .paragraph {
+    font-size: 1.6rem;
+    margin: 50px 10px;
+    padding: 15px;
+  }
+
+  /* Footer: íconos debajo */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .icons-container {
+    order: 2; /* íconos van al final */
+    margin-top: 10px;
+  }
+
+  .footer-p1 {
+    order: 1;
+  }
+}

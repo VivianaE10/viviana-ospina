@@ -1,0 +1,115 @@
+/* ===== Responsive solo para móviles ===== */
+
+/* Móviles grandes (<= 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 23px;
+  }
+
+  /* Navbar vertical */
+
+  .btn {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  /* Hero */
+  .header2 {
+    padding: 50px 0;
+  }
+  .header-title h1,
+  .name {
+    font-size: 4rem; /* más pequeño en móvil */
+    padding: 350px 8px;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+    margin: 40px 12px;
+    padding: 15px;
+  }
+
+  /* Info apilada */
+  .info {
+    grid-template-columns: 1fr;
+    padding: 20px 8px;
+  }
+  .content-image {
+    justify-content: center;
+  }
+  .image img {
+    width: 160px;
+    height: 160px;
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .content-description {
+    width: 95%;
+    font-size: 1.05rem;
+  }
+
+  /* Sección y tarjetas */
+  .content-section {
+    width: 95%;
+    padding: 18px;
+    top: -40px;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .cards-container2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .card {
+    width: 95%;
+  }
+
+  /* Botón */
+  #btn-container {
+    width: 80%;
+    font-size: 1.1rem;
+    padding: 12px 10px;
+  }
+
+  /* Footer centrado */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 8px;
+    gap: 10px;
+
+    /* IMPORTANT: anular valores de desktop que empujan contenido */
+    height: auto; /* evita que footer mantenga 200px fijo */
+    margin-top: 10;
+  }
+
+  /* orden visual: 1 = aparece primero, 2 = después, etc. */
+
+  .icons-container {
+    order: 2; /* los ponemos antes del bloque .message */
+    justify-content: center;
+    gap: 18px;
+    margin: 25px;
+  }
+
+  .message {
+    order: 3; /* el bloque con los párrafos va después */
+    padding-top: 0; /* quita el empuje extra que tenías */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .footer-p,
+  .footer-p1 {
+    font-size: 15px;
+    margin: 2px;
+  }
+}
