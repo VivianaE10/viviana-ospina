@@ -1,6 +1,7 @@
 //objeto con las  propiedades y clave(url)
 
 const cards = {
+  cardDonaciones: "https://paginadonaciones.vercel.app/index.html",
   cardRick: "https://interfaz-rick-and-morty.vercel.app/",
   cardNetflix: "https://interfaz-de-netflix.vercel.app/",
 };
